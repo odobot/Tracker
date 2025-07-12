@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IoT Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    .summary-box {
+      padding: 20px;
+      color: #fff;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .bg-temp { background-color: #f39c12; }
+    .bg-humidity { background-color: #00c0ef; }
+    .bg-current { background-color: #dd4b39; }
+    .bg-door { background-color: #00a65a; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2 class="text-center">IoT Monitoring Dashboard</h2>
+
+  <!-- Summary Boxes -->
+  <div class="row">
+    <div class="col-md-3">
+      <div class="summary-box bg-temp text-center">
+        <h4>Temperature</h4>
+        <h3 id="temp-value">-- °C</h3>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="summary-box bg-humidity text-center">
+        <h4>Humidity</h4>
+        <h3 id="hum-value">-- %</h3>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="summary-box bg-current text-center">
+        <h4>Current</h4>
+        <h3 id="curr-value">-- A</h3>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="summary-box bg-door text-center">
+        <h4>Door</h4>
+        <h3 id="door-value">--</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Table -->
+  <div class="panel panel-default">
+    <div class="panel-heading">Latest Device Readings</div>
+    <div class="panel-body">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Device ID</th>
+            <th>Temperature (°C)</th>
+            <th>Humidity (%)</th>
+            <th>Current (A)</th>
+            <th>Door State</th>
+            <th>Timestamp</th>
+          </tr>
+        </thead>
+        <tbody id="data-table">
+          <!-- Dynamic rows go here -->
+          <tr>
+            <td>1</td>
+            <td>25.4</td>
+            <td>62.3</td>
+            <td>0.8</td>
+            <td>Closed</td>
+            <td>2025-07-11 10:30:45</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Chart Placeholder -->
+  <div class="panel panel-info">
+    <div class="panel-heading">Live Temperature Chart</div>
+    <div class="panel-body">
+      <canvas id="tempChart" width="100%" height="40"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- JS Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@1.1.1/Chart.min.js"></script>
+
+<script>
+  // Example chart data (replace with live updates)
+  var ctx = document.getElementById("tempChart").getContext("2d");
+  var data = {
+    labels: ["10:00", "10:10", "10:20", "10:30", "10:40"],
+    datasets: [{
+      label: "Temperature (°C)",
+      fillColor: "rgba(243,156,18,0.5)",
+      strokeColor: "#f39c12",
+      data: [24, 25, 26, 25.5, 26.2]
+    }]
+  };
+  var tempChart = new Chart(ctx).Line(data);
+</script>
+
+</body>
+</html>
