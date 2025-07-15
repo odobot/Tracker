@@ -1,0 +1,414 @@
+2025-07-03 11:12:40 notice: Use `(string)$request->getBody()` to get the raw PHP input as string; use `BodyParserMiddleware` to parse the request body so that it's available as array/object through $request->getParsedBody()
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php, line: 188
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `src/Controller/ThresholdLimitsController.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /threshold-limits/set-thresholds
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/ServerRequest.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/ServerRequest.php, line 1272
+Cake\Http\ServerRequest->input() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php, line 188
+App\Controller\ThresholdLimitsController->setThresholds() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+
+2025-07-03 11:19:10 notice: Use `(string)$request->getBody()` to get the raw PHP input as string; use `BodyParserMiddleware` to parse the request body so that it's available as array/object through $request->getParsedBody()
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php, line: 188
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `src/Controller/ThresholdLimitsController.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /threshold-limits/set-thresholds
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/ServerRequest.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/ServerRequest.php, line 1272
+Cake\Http\ServerRequest->input() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php, line 188
+App\Controller\ThresholdLimitsController->setThresholds() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+
+2025-07-03 11:21:29 notice: Use `(string)$request->getBody()` to get the raw PHP input as string; use `BodyParserMiddleware` to parse the request body so that it's available as array/object through $request->getParsedBody()
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php, line: 188
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `src/Controller/ThresholdLimitsController.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /threshold-limits/set-thresholds
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/ServerRequest.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/ServerRequest.php, line 1272
+Cake\Http\ServerRequest->input() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php, line 188
+App\Controller\ThresholdLimitsController->setThresholds() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+
+2025-07-03 11:25:09 notice: If you cannot use automatic connection management, use $connection->getDriver()->connect() instead.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line: 30
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `templates/Pages/home.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php, line 322
+Cake\Database\Connection->connect() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 30
+Cake\View\View->{closure}() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 167
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1222
+Cake\View\View->_evaluate() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1179
+Cake\View\View->_render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 810
+Cake\View\View->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 790
+Cake\Controller\Controller->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/PagesController.php, line 65
+App\Controller\PagesController->display() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+
+2025-07-03 11:58:57 notice: Use `(string)$request->getBody()` to get the raw PHP input as string; use `BodyParserMiddleware` to parse the request body so that it's available as array/object through $request->getParsedBody()
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php, line: 188
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `src/Controller/ThresholdLimitsController.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /threshold-limits/set-thresholds
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/ServerRequest.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/ServerRequest.php, line 1272
+Cake\Http\ServerRequest->input() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php, line 188
+App\Controller\ThresholdLimitsController->setThresholds() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+
+2025-07-08 09:04:28 notice: If you cannot use automatic connection management, use $connection->getDriver()->connect() instead.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line: 30
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `templates/Pages/home.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php, line 322
+Cake\Database\Connection->connect() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 30
+Cake\View\View->{closure}() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 167
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1222
+Cake\View\View->_evaluate() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1179
+Cake\View\View->_render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 810
+Cake\View\View->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 790
+Cake\Controller\Controller->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/PagesController.php, line 65
+App\Controller\PagesController->display() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+
+2025-07-10 08:50:26 notice: If you cannot use automatic connection management, use $connection->getDriver()->connect() instead.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line: 30
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `templates/Pages/home.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php, line 322
+Cake\Database\Connection->connect() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 30
+Cake\View\View->{closure}() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 167
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1222
+Cake\View\View->_evaluate() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1179
+Cake\View\View->_render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 810
+Cake\View\View->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 790
+Cake\Controller\Controller->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/PagesController.php, line 65
+App\Controller\PagesController->display() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+
+2025-07-10 08:56:09 notice: If you cannot use automatic connection management, use $connection->getDriver()->connect() instead.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line: 30
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `templates/Pages/home.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php, line 322
+Cake\Database\Connection->connect() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 30
+Cake\View\View->{closure}() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 167
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1222
+Cake\View\View->_evaluate() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1179
+Cake\View\View->_render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 810
+Cake\View\View->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 790
+Cake\Controller\Controller->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/PagesController.php, line 65
+App\Controller\PagesController->display() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+
+2025-07-10 08:56:35 notice: If you cannot use automatic connection management, use $connection->getDriver()->connect() instead.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line: 30
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `templates/Pages/home.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php, line 322
+Cake\Database\Connection->connect() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 30
+Cake\View\View->{closure}() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 167
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1222
+Cake\View\View->_evaluate() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1179
+Cake\View\View->_render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 810
+Cake\View\View->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 790
+Cake\Controller\Controller->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/PagesController.php, line 65
+App\Controller\PagesController->display() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+
+2025-07-10 08:56:38 notice: If you cannot use automatic connection management, use $connection->getDriver()->connect() instead.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line: 30
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `templates/Pages/home.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php, line 322
+Cake\Database\Connection->connect() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 30
+Cake\View\View->{closure}() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 167
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1222
+Cake\View\View->_evaluate() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1179
+Cake\View\View->_render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 810
+Cake\View\View->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 790
+Cake\Controller\Controller->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/PagesController.php, line 65
+App\Controller\PagesController->display() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+
+2025-07-11 08:00:33 notice: If you cannot use automatic connection management, use $connection->getDriver()->connect() instead.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line: 30
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `templates/Pages/home.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php, line 322
+Cake\Database\Connection->connect() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 30
+Cake\View\View->{closure}() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 167
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1222
+Cake\View\View->_evaluate() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1179
+Cake\View\View->_render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 810
+Cake\View\View->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 790
+Cake\Controller\Controller->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/PagesController.php, line 65
+App\Controller\PagesController->display() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+
+2025-07-11 08:11:42 notice: If you cannot use automatic connection management, use $connection->getDriver()->connect() instead.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line: 30
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `templates/Pages/home.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php, line 322
+Cake\Database\Connection->connect() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 30
+Cake\View\View->{closure}() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 167
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1222
+Cake\View\View->_evaluate() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1179
+Cake\View\View->_render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 810
+Cake\View\View->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 790
+Cake\Controller\Controller->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/PagesController.php, line 65
+App\Controller\PagesController->display() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+
+2025-07-15 11:55:05 notice: If you cannot use automatic connection management, use $connection->getDriver()->connect() instead.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line: 30
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `templates/Pages/home.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Request URL: /
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php, line 322
+Cake\Database\Connection->connect() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 30
+Cake\View\View->{closure}() /home/ndiba/Documents/PROJECTS/FAC/Tracker/templates/Pages/home.php, line 167
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1222
+Cake\View\View->_evaluate() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 1179
+Cake\View\View->_render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/View/View.php, line 810
+Cake\View\View->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 790
+Cake\Controller\Controller->render() /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/PagesController.php, line 65
+App\Controller\PagesController->display() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php, line 560
+Cake\Controller\Controller->invokeAction() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 140
+Cake\Controller\ControllerFactory->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 115
+Cake\Controller\ControllerFactory->invoke() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 325
+Cake\Http\BaseApplication->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 189
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Routing\Middleware\AssetMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 149
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php, line 67
+Cake\Http\Runner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php, line 99
+Cake\Http\Server->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php, line 40
+[main]
+

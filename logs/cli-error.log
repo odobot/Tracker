@@ -1,0 +1,29 @@
+2025-07-03 06:45:03 error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency. Requested by connection "default" in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php on line 196
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+  'name' => 'default',
+)
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:145
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ConnectionRegistry.php:89
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php:111
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php:214
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/AllCommand.php:84
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/BaseCommand.php:190
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php:12
+- [main]:
+
+2025-07-03 09:28:41 error: [Cake\Database\Exception\DatabaseException] Cannot describe critical_events. It has 0 columns. in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 120
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:528
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ModelCommand.php:111
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ModelCommand.php:94
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/AllCommand.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/BaseCommand.php:190
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php:12
+- [main]:
+
