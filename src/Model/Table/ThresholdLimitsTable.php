@@ -39,7 +39,7 @@ class ThresholdLimitsTable extends Table
 
         $this->setTable('threshold_limits');
         $this->setDisplayField('variable');
-        $this->setPrimaryKey('device_id');
+        $this->setPrimaryKey(['device_id', 'variable']);
     }
 
     /**
@@ -50,17 +50,6 @@ class ThresholdLimitsTable extends Table
      */
     public function validationDefault(Validator $validator): Validator
     {
-        $validator
-            ->integer('device_id')
-            ->requirePresence('device_id', 'create')
-            ->notEmptyString('device_id', 'Device ID cannot be empty');
-            
-        $validator
-            ->scalar('variable')
-            ->maxLength('variable', 50)
-            ->requirePresence('variable', 'create')
-            ->notEmptyString('variable');
-
         $validator
             ->numeric('lower_limit')
             ->allowEmptyString('lower_limit');

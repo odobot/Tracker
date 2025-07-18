@@ -14,6 +14,8 @@ use Cake\ORM\Entity;
  * @property float|null $humidity
  * @property float|null $current_reading
  * @property int|null $status
+ * @property float|null $GpsX
+ * @property float|null $GpsY
  * @property \Cake\I18n\FrozenTime $timestamp
  */
 class TenMinuteData extends Entity
@@ -34,6 +36,8 @@ class TenMinuteData extends Entity
         'humidity' => true,
         'current_reading' => true,
         'status' => true,
+        'GpsX' => true,
+        'GpsY' => true,
         'timestamp' => true,
     ];
 }

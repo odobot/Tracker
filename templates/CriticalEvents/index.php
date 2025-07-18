@@ -13,10 +13,13 @@
                 <tr>
                     <th><?= $this->Paginator->sort('uuid') ?></th>
                     <th><?= $this->Paginator->sort('device_id') ?></th>
-                    <th><?= $this->Paginator->sort('variable') ?></th>
-                    <th><?= $this->Paginator->sort('value') ?></th>
-                    <th><?= $this->Paginator->sort('threshold_type') ?></th>
-                    <th><?= $this->Paginator->sort('threshold_value') ?></th>
+                    <th><?= $this->Paginator->sort('temperature') ?></th>
+                    <th><?= $this->Paginator->sort('humidity') ?></th>
+                    <th><?= $this->Paginator->sort('current_reading') ?></th>
+                    <th><?= $this->Paginator->sort('gps_x') ?></th>
+                    <th><?= $this->Paginator->sort('gps_y') ?></th>
+                    <th><?= $this->Paginator->sort('status') ?></th>
+                    <th><?= $this->Paginator->sort('critical_label') ?></th>
                     <th><?= $this->Paginator->sort('timestamp') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
@@ -26,10 +29,13 @@
                 <tr>
                     <td><?= h($criticalEvent->uuid) ?></td>
                     <td><?= $this->Number->format($criticalEvent->device_id) ?></td>
-                    <td><?= h($criticalEvent->variable) ?></td>
-                    <td><?= $this->Number->format($criticalEvent->value) ?></td>
-                    <td><?= h($criticalEvent->threshold_type) ?></td>
-                    <td><?= $this->Number->format($criticalEvent->threshold_value) ?></td>
+                    <td><?= $this->Number->format($criticalEvent->temperature) ?></td>
+                    <td><?= $this->Number->format($criticalEvent->humidity) ?></td>
+                    <td><?= $this->Number->format($criticalEvent->current_reading) ?></td>
+                    <td><?= $this->Number->format($criticalEvent->gps_x) ?></td>
+                    <td><?= $criticalEvent->gps_y === null ? '' : $this->Number->format($criticalEvent->gps_y) ?></td>
+                    <td><?= h($criticalEvent->status) ?></td>
+                    <td><?= h($criticalEvent->critical_label) ?></td>
                     <td><?= h($criticalEvent->timestamp) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $criticalEvent->uuid]) ?>

@@ -43,6 +43,14 @@
                     <td><?= $tenMinuteData->status === null ? '' : $this->Number->format($tenMinuteData->status) ?></td>
                 </tr>
                 <tr>
+                    <th><?= __('GpsX') ?></th>
+                    <td><?= $tenMinuteData->GpsX === null ? '' : $this->Number->format($tenMinuteData->GpsX) ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('GpsY') ?></th>
+                    <td><?= $tenMinuteData->GpsY === null ? '' : $this->Number->format($tenMinuteData->GpsY) ?></td>
+                </tr>
+                <tr>
                     <th><?= __('Timestamp') ?></th>
                     <td><?= h($tenMinuteData->timestamp) ?></td>
                 </tr>

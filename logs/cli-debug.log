@@ -137,3 +137,173 @@ Cake\Console\CommandRunner->runCommand() /home/ndiba/Documents/PROJECTS/FAC/Trac
 Cake\Console\CommandRunner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php, line 12
 [main]
 
+2025-07-17 10:31:51 notice: 4.5.0 - Dynamic properties will be removed in PHP 8.2. Add `public $LiveData = null;` to your class definition or use `#[AllowDynamicProperties]` attribute.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line: 493
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/bake/src/Command/TestCommand.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php, line 121
+Cake\Controller\Controller->loadModel() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 493
+Bake\Command\TestCommand->_processController() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 452
+Bake\Command\TestCommand->generateFixtureList() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 258
+Bake\Command\TestCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 132
+Bake\Command\TestCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 207
+Bake\Command\ControllerCommand->bakeTest() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 154
+Bake\Command\ControllerCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 64
+Bake\Command\ControllerCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/AllCommand.php, line 115
+Bake\Command\AllCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/BaseCommand.php, line 190
+Cake\Console\BaseCommand->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 334
+Cake\Console\CommandRunner->runCommand() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 172
+Cake\Console\CommandRunner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php, line 12
+[main]
+
+2025-07-17 11:35:04 notice: 4.5.0 - Dynamic properties will be removed in PHP 8.2. Add `public $ThresholdLimits = null;` to your class definition or use `#[AllowDynamicProperties]` attribute.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line: 493
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/bake/src/Command/TestCommand.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php, line 121
+Cake\Controller\Controller->loadModel() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 493
+Bake\Command\TestCommand->_processController() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 452
+Bake\Command\TestCommand->generateFixtureList() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 258
+Bake\Command\TestCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 132
+Bake\Command\TestCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 207
+Bake\Command\ControllerCommand->bakeTest() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 154
+Bake\Command\ControllerCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 64
+Bake\Command\ControllerCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/AllCommand.php, line 115
+Bake\Command\AllCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/BaseCommand.php, line 190
+Cake\Console\BaseCommand->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 334
+Cake\Console\CommandRunner->runCommand() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 172
+Cake\Console\CommandRunner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php, line 12
+[main]
+
+2025-07-17 12:55:34 notice: 4.5.0 - Dynamic properties will be removed in PHP 8.2. Add `public $CriticalEvents = null;` to your class definition or use `#[AllowDynamicProperties]` attribute.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line: 493
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/bake/src/Command/TestCommand.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php, line 121
+Cake\Controller\Controller->loadModel() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 493
+Bake\Command\TestCommand->_processController() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 452
+Bake\Command\TestCommand->generateFixtureList() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 258
+Bake\Command\TestCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 132
+Bake\Command\TestCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 207
+Bake\Command\ControllerCommand->bakeTest() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 154
+Bake\Command\ControllerCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 64
+Bake\Command\ControllerCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/AllCommand.php, line 115
+Bake\Command\AllCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/BaseCommand.php, line 190
+Cake\Console\BaseCommand->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 334
+Cake\Console\CommandRunner->runCommand() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 172
+Cake\Console\CommandRunner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php, line 12
+[main]
+
+2025-07-17 13:11:34 notice: 4.5.0 - Dynamic properties will be removed in PHP 8.2. Add `public $CriticalEvents = null;` to your class definition or use `#[AllowDynamicProperties]` attribute.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line: 493
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/bake/src/Command/TestCommand.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php, line 121
+Cake\Controller\Controller->loadModel() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 493
+Bake\Command\TestCommand->_processController() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 452
+Bake\Command\TestCommand->generateFixtureList() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 258
+Bake\Command\TestCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 132
+Bake\Command\TestCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 207
+Bake\Command\ControllerCommand->bakeTest() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 154
+Bake\Command\ControllerCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 64
+Bake\Command\ControllerCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/AllCommand.php, line 115
+Bake\Command\AllCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/BaseCommand.php, line 190
+Cake\Console\BaseCommand->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 334
+Cake\Console\CommandRunner->runCommand() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 172
+Cake\Console\CommandRunner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php, line 12
+[main]
+
+2025-07-17 14:05:23 notice: Your application is using a deprecated `Error.exceptionRenderer`. You can either remove the `Error.exceptionRenderer` config key to have CakePHP choose one of the default exception renderers, or define a class that is not `Cake\Error\ExceptionRenderer`.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line: 249
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/cakephp/src/Error/ExceptionTrap.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 122
+Cake\Error\ExceptionTrap->renderer() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 249
+Cake\Error\ExceptionTrap->handleException() [internal], line ??
+[main]
+
+2025-07-17 14:06:46 notice: 4.5.0 - Dynamic properties will be removed in PHP 8.2. Add `public $TenMinuteData = null;` to your class definition or use `#[AllowDynamicProperties]` attribute.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line: 493
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/bake/src/Command/TestCommand.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php, line 121
+Cake\Controller\Controller->loadModel() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 493
+Bake\Command\TestCommand->_processController() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 452
+Bake\Command\TestCommand->generateFixtureList() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 258
+Bake\Command\TestCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 132
+Bake\Command\TestCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 207
+Bake\Command\ControllerCommand->bakeTest() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 154
+Bake\Command\ControllerCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 64
+Bake\Command\ControllerCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/AllCommand.php, line 115
+Bake\Command\AllCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/BaseCommand.php, line 190
+Cake\Console\BaseCommand->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 334
+Cake\Console\CommandRunner->runCommand() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 172
+Cake\Console\CommandRunner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php, line 12
+[main]
+
+2025-07-17 14:22:58 notice: 4.5.0 - Dynamic properties will be removed in PHP 8.2. Add `public $TenMinuteData = null;` to your class definition or use `#[AllowDynamicProperties]` attribute.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line: 493
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/bake/src/Command/TestCommand.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php, line 121
+Cake\Controller\Controller->loadModel() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 493
+Bake\Command\TestCommand->_processController() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 452
+Bake\Command\TestCommand->generateFixtureList() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 258
+Bake\Command\TestCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 132
+Bake\Command\TestCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 207
+Bake\Command\ControllerCommand->bakeTest() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 154
+Bake\Command\ControllerCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 64
+Bake\Command\ControllerCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/AllCommand.php, line 115
+Bake\Command\AllCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/BaseCommand.php, line 190
+Cake\Console\BaseCommand->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 334
+Cake\Console\CommandRunner->runCommand() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 172
+Cake\Console\CommandRunner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php, line 12
+[main]
+
+2025-07-17 14:27:26 notice: 4.5.0 - Dynamic properties will be removed in PHP 8.2. Add `public $TenMinuteData = null;` to your class definition or use `#[AllowDynamicProperties]` attribute.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line: 493
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/bake/src/Command/TestCommand.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php, line 121
+Cake\Controller\Controller->loadModel() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 493
+Bake\Command\TestCommand->_processController() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 452
+Bake\Command\TestCommand->generateFixtureList() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 258
+Bake\Command\TestCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 132
+Bake\Command\TestCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 207
+Bake\Command\ControllerCommand->bakeTest() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 154
+Bake\Command\ControllerCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 64
+Bake\Command\ControllerCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/AllCommand.php, line 115
+Bake\Command\AllCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/BaseCommand.php, line 190
+Cake\Console\BaseCommand->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 334
+Cake\Console\CommandRunner->runCommand() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 172
+Cake\Console\CommandRunner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php, line 12
+[main]
+
+2025-07-17 14:28:39 notice: 4.5.0 - Dynamic properties will be removed in PHP 8.2. Add `public $TenMinuteData = null;` to your class definition or use `#[AllowDynamicProperties]` attribute.
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line: 493
+You can disable all deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED`. Adding `vendor/cakephp/bake/src/Command/TestCommand.php` to `Error.ignoredDeprecationPaths` in your `config/app.php` config will mute deprecations from that file only.
+Trace:
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/functions.php, line 318
+/home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php, line 121
+Cake\Controller\Controller->loadModel() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 493
+Bake\Command\TestCommand->_processController() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 452
+Bake\Command\TestCommand->generateFixtureList() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 258
+Bake\Command\TestCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/TestCommand.php, line 132
+Bake\Command\TestCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 207
+Bake\Command\ControllerCommand->bakeTest() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 154
+Bake\Command\ControllerCommand->bake() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ControllerCommand.php, line 64
+Bake\Command\ControllerCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/AllCommand.php, line 115
+Bake\Command\AllCommand->execute() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/BaseCommand.php, line 190
+Cake\Console\BaseCommand->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 334
+Cake\Console\CommandRunner->runCommand() /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php, line 172
+Cake\Console\CommandRunner->run() /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php, line 12
+[main]
+

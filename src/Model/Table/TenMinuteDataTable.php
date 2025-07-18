@@ -38,8 +38,8 @@ class TenMinuteDataTable extends Table
         parent::initialize($config);
 
         $this->setTable('ten_minute_data');
-        $this->setDisplayField('id');
-        $this->setPrimaryKey('id');
+        $this->setDisplayField('uuid');
+        $this->setPrimaryKey('uuid');
     }
 
     /**
@@ -75,6 +75,14 @@ class TenMinuteDataTable extends Table
         $validator
             ->integer('status')
             ->allowEmptyString('status');
+
+        $validator
+            ->numeric('GpsX')
+            ->allowEmptyString('GpsX');
+
+        $validator
+            ->numeric('GpsY')
+            ->allowEmptyString('GpsY');
 
         $validator
             ->dateTime('timestamp')

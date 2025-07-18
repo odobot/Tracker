@@ -28,6 +28,8 @@
                     echo $this->Form->control('current_reading');
                     echo $this->Form->control('status');
                     echo $this->Form->control('timestamp');
+                    echo $this->Form->control('GpsX');
+                    echo $this->Form->control('GpsY');
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

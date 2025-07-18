@@ -18,10 +18,13 @@
                 <legend><?= __('Add Critical Event') ?></legend>
                 <?php
                     echo $this->Form->control('device_id');
-                    echo $this->Form->control('variable');
-                    echo $this->Form->control('value');
-                    echo $this->Form->control('threshold_type');
-                    echo $this->Form->control('threshold_value');
+                    echo $this->Form->control('temperature');
+                    echo $this->Form->control('humidity');
+                    echo $this->Form->control('current_reading');
+                    echo $this->Form->control('gps_x');
+                    echo $this->Form->control('gps_y');
+                    echo $this->Form->control('status');
+                    echo $this->Form->control('critical_label');
                     echo $this->Form->control('timestamp', ['empty' => true]);
                 ?>
             </fieldset>

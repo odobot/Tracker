@@ -843,3 +843,698 @@ Stack Trace:
 Request URL: /critical-data-table
 2025-07-11 08:11:59 warning: DebugKit is disabling itself as your host `15ca0f1793d7.ngrok-free.app` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
 2025-07-11 08:15:48 warning: DebugKit is disabling itself as your host `15ca0f1793d7.ngrok-free.app` is not in the known safe list of top-level-domains (localhost, invalid, test, example, local). If you would like to force DebugKit on use the `DebugKit.forceEnable` Configure option.
+2025-07-17 10:53:44 error: [Cake\Controller\Exception\MissingActionException] Action ApiController::liveData() could not be found, or is not accessible. in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php on line 539
+Exception Attributes: array (
+  'controller' => 'ApiController',
+  'action' => 'liveData',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:135
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data
+2025-07-17 11:42:16 error: [Cake\Controller\Exception\MissingActionException] Action ThresholdLimitsController::thresholdLimits() could not be found, or is not accessible. in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php on line 539
+Exception Attributes: array (
+  'controller' => 'ThresholdLimitsController',
+  'action' => 'thresholdLimits',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:135
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /threshold-limits/threshold-limits/save
+2025-07-17 11:42:46 error: [PDOException] SQLSTATE[23000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'device_id', table 'TrackerDB.dbo.threshold_limits'; column does not allow nulls. INSERT fails. in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php on line 191
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:191
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:191
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:78
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:448
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:445
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Query.php:274
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php:147
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /threshold-limits/save
+2025-07-17 12:02:27 error: [Cake\Database\Exception\MissingConnectionException] Connection to Sqlserver could not be established: SQLSTATE[HYT00]: [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Driver.php on line 144
+Exception Attributes: array (
+  'driver' => 'Sqlserver',
+  'reason' => 'SQLSTATE[HYT00]: [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired',
+)
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Driver/Sqlserver.php:162
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Schema/SchemaDialect.php:51
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Driver/Sqlserver.php:306
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:53
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:542
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:527
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Query.php:309
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Query.php:185
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1763
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1281
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php:123
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Caused by: [PDOException] SQLSTATE[HYT00]: [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Driver.php on line 132
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Driver.php:132
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Driver.php:142
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Driver/Sqlserver.php:162
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Schema/SchemaDialect.php:51
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Driver/Sqlserver.php:306
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:53
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:542
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:527
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Query.php:309
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Query.php:185
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1763
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1281
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php:123
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /threshold-limits/save
+2025-07-17 12:09:16 error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (1, ), expecting (device_id, variable) in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2137
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /threshold-limits/save
+2025-07-17 12:09:58 error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (1, ), expecting (device_id, variable) in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2137
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php:144
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /threshold-limits/save
+2025-07-17 12:09:59 error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (1, ), expecting (device_id, variable) in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2137
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php:144
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /threshold-limits/save
+2025-07-17 12:10:09 error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (1, ), expecting (device_id, variable) in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2137
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php:144
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /threshold-limits/save
+2025-07-17 12:11:39 error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (1, ), expecting (device_id, variable) in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2137
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/ThresholdLimitsController.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /threshold-limits/save
+2025-07-17 13:10:26 error: [PDOException] SQLSTATE[23000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'temperature', table 'TrackerDB.dbo.critical_events'; column does not allow nulls. INSERT fails. in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php on line 191
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:191
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:191
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:78
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:448
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:70
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:445
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Query.php:274
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1971
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/LiveDataController.php:182
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data
+2025-07-17 13:44:19 error: [Error] Call to undefined method ArrayIterator::get() in /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/LiveDataController.php on line 164
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data
+2025-07-17 13:56:12 error: [Cake\Controller\Exception\MissingActionException] Action LiveDataController::receive() could not be found, or is not accessible. in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php on line 539
+Exception Attributes: array (
+  'controller' => 'LiveDataController',
+  'action' => 'receive',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:135
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data
+2025-07-17 14:11:47 error: [TypeError] Cake\Database\TypeFactory::build(): Argument #1 ($name) must be of type string, null given, called in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2192 in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2192
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2116
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1971
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/LiveDataController.php:187
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data
+2025-07-17 14:17:27 error: [TypeError] Cake\Database\TypeFactory::build(): Argument #1 ($name) must be of type string, null given, called in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2192 in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2192
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2116
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1971
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/LiveDataController.php:187
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data
+2025-07-17 14:19:15 error: [TypeError] Cake\Database\TypeFactory::build(): Argument #1 ($name) must be of type string, null given, called in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2192 in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2192
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2116
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1971
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/LiveDataController.php:187
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data
+2025-07-17 14:21:15 error: [TypeError] Cake\Database\TypeFactory::build(): Argument #1 ($name) must be of type string, null given, called in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2192 in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2192
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2116
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1971
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/LiveDataController.php:185
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data
+2025-07-17 14:21:16 error: [TypeError] Cake\Database\TypeFactory::build(): Argument #1 ($name) must be of type string, null given, called in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2192 in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2192
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2116
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1971
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/LiveDataController.php:185
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data
+2025-07-17 14:21:17 error: [TypeError] Cake\Database\TypeFactory::build(): Argument #1 ($name) must be of type string, null given, called in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2192 in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2192
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2116
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1971
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/LiveDataController.php:185
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data
+2025-07-17 14:23:02 error: [TypeError] Cake\Database\TypeFactory::build(): Argument #1 ($name) must be of type string, null given, called in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2192 in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2192
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2116
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1971
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/LiveDataController.php:185
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data
+2025-07-17 14:27:33 error: [TypeError] Cake\Database\TypeFactory::build(): Argument #1 ($name) must be of type string, null given, called in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php on line 2192 in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/TypeFactory.php on line 72
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2192
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2116
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:2041
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1940
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1582
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Connection.php:896
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1581
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1939
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:1971
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/LiveDataController.php:185
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data
+2025-07-17 14:47:47 error: [Error] Class "App\Controller\BadRequestException" not found in /home/ndiba/Documents/PROJECTS/FAC/Tracker/src/Controller/LiveDataController.php on line 119
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/Controller.php:560
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:140
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/BaseApplication.php:325
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/webroot/index.php:40
+- [main]:
+
+Request URL: /api/live-data

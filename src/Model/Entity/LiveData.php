@@ -15,6 +15,8 @@ use Cake\ORM\Entity;
  * @property string|null $current_reading
  * @property int|null $status
  * @property \Cake\I18n\FrozenTime|null $timestamp
+ * @property string|null $GpsX
+ * @property string|null $GpsY
  */
 class LiveData extends Entity
 {
@@ -34,5 +36,7 @@ class LiveData extends Entity
         'current_reading' => true,
         'status' => true,
         'timestamp' => true,
+        'GpsX' => true,
+        'GpsY' => true,
     ];
 }

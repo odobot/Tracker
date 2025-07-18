@@ -28,6 +28,8 @@
                     echo $this->Form->control('humidity');
                     echo $this->Form->control('current_reading');
                     echo $this->Form->control('status');
+                    echo $this->Form->control('GpsX');
+                    echo $this->Form->control('GpsY');
                     echo $this->Form->control('timestamp');
                 ?>
             </fieldset>

@@ -10,10 +10,13 @@ use Cake\ORM\Entity;
  *
  * @property string $uuid
  * @property int $device_id
- * @property string $variable
- * @property float $value
- * @property string $threshold_type
- * @property float $threshold_value
+ * @property float $temperature
+ * @property float $humidity
+ * @property float $current_reading
+ * @property float $gps_x
+ * @property float|null $gps_y
+ * @property string|null $status
+ * @property string|null $critical_label
  * @property \Cake\I18n\FrozenTime|null $timestamp
  */
 class CriticalEvent extends Entity
@@ -29,10 +32,13 @@ class CriticalEvent extends Entity
      */
     protected $_accessible = [
         'device_id' => true,
-        'variable' => true,
-        'value' => true,
-        'threshold_type' => true,
-        'threshold_value' => true,
+        'temperature' => true,
+        'humidity' => true,
+        'current_reading' => true,
+        'gps_x' => true,
+        'gps_y' => true,
+        'status' => true,
+        'critical_label' => true,
         'timestamp' => true,
     ];
 }

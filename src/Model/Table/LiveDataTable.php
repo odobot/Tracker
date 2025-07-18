@@ -53,8 +53,7 @@ class LiveDataTable extends Table
         $validator
             ->integer('device_id')
             ->requirePresence('device_id', 'create')
-            ->notEmptyString('device_id')
-            ->add('device_id', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+            ->notEmptyString('device_id');
 
         $validator
             ->decimal('temperature')
@@ -76,20 +75,14 @@ class LiveDataTable extends Table
             ->dateTime('timestamp')
             ->allowEmptyDateTime('timestamp');
 
+        $validator
+            ->decimal('GpsX')
+            ->allowEmptyString('GpsX');
+
+        $validator
+            ->decimal('GpsY')
+            ->allowEmptyString('GpsY');
+
         return $validator;
-    }
-
-    /**
-     * Returns a rules checker object that will be used for validating
-     * application integrity.
-     *
-     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
-     * @return \Cake\ORM\RulesChecker
-     */
-    public function buildRules(RulesChecker $rules): RulesChecker
-    {
-        $rules->add($rules->isUnique(['device_id']), ['errorField' => 'device_id']);
-
-        return $rules;
     }
 }

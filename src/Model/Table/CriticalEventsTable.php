@@ -56,26 +56,38 @@ class CriticalEventsTable extends Table
             ->notEmptyString('device_id');
 
         $validator
-            ->scalar('variable')
-            ->maxLength('variable', 50)
-            ->requirePresence('variable', 'create')
-            ->notEmptyString('variable');
+            ->numeric('temperature')
+            ->requirePresence('temperature', 'create')
+            ->notEmptyString('temperature');
 
         $validator
-            ->numeric('value')
-            ->requirePresence('value', 'create')
-            ->notEmptyString('value');
+            ->numeric('humidity')
+            ->requirePresence('humidity', 'create')
+            ->notEmptyString('humidity');
 
         $validator
-            ->scalar('threshold_type')
-            ->maxLength('threshold_type', 10)
-            ->requirePresence('threshold_type', 'create')
-            ->notEmptyString('threshold_type');
+            ->numeric('current_reading')
+            ->requirePresence('current_reading', 'create')
+            ->notEmptyString('current_reading');
 
         $validator
-            ->numeric('threshold_value')
-            ->requirePresence('threshold_value', 'create')
-            ->notEmptyString('threshold_value');
+            ->numeric('gps_x')
+            ->requirePresence('gps_x', 'create')
+            ->notEmptyString('gps_x');
+
+        $validator
+            ->numeric('gps_y')
+            ->allowEmptyString('gps_y');
+
+        $validator
+            ->scalar('status')
+            ->maxLength('status', 10)
+            ->allowEmptyString('status');
+
+        $validator
+            ->scalar('critical_label')
+            ->maxLength('critical_label', 20)
+            ->allowEmptyString('critical_label');
 
         $validator
             ->dateTime('timestamp')

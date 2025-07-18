@@ -25,6 +25,7 @@ class ThresholdLimit extends Entity
      * @var array<string, bool>
      */
     protected $_accessible = [
+        'device_id' => true,
         'variable' => true,
         'lower_limit' => true,
         'upper_limit' => true,

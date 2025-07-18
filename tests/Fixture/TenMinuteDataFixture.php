@@ -19,13 +19,15 @@ class TenMinuteDataFixture extends TestFixture
     {
         $this->records = [
             [
-                'uuid' => 'b0469968-ef2a-46e0-b2a8-19cbd1d3e47c',
+                'uuid' => 'f06a149b-25c7-4274-9a1c-12907c948aa4',
                 'device_id' => 1,
                 'temperature' => 1,
                 'humidity' => 1,
                 'current_reading' => 1,
                 'status' => 1,
-                'timestamp' => '2025-07-03 07:38:24',
+                'GpsX' => 1,
+                'GpsY' => 1,
+                'timestamp' => '2025-07-17 14:28:37',
             ],
         ];
         parent::init();

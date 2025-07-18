@@ -23,24 +23,36 @@
                     <td><?= h($criticalEvent->uuid) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Variable') ?></th>
-                    <td><?= h($criticalEvent->variable) ?></td>
+                    <th><?= __('Status') ?></th>
+                    <td><?= h($criticalEvent->status) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Threshold Type') ?></th>
-                    <td><?= h($criticalEvent->threshold_type) ?></td>
+                    <th><?= __('Critical Label') ?></th>
+                    <td><?= h($criticalEvent->critical_label) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Device Id') ?></th>
                     <td><?= $this->Number->format($criticalEvent->device_id) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Value') ?></th>
-                    <td><?= $this->Number->format($criticalEvent->value) ?></td>
+                    <th><?= __('Temperature') ?></th>
+                    <td><?= $this->Number->format($criticalEvent->temperature) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Threshold Value') ?></th>
-                    <td><?= $this->Number->format($criticalEvent->threshold_value) ?></td>
+                    <th><?= __('Humidity') ?></th>
+                    <td><?= $this->Number->format($criticalEvent->humidity) ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('Current Reading') ?></th>
+                    <td><?= $this->Number->format($criticalEvent->current_reading) ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('Gps X') ?></th>
+                    <td><?= $this->Number->format($criticalEvent->gps_x) ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('Gps Y') ?></th>
+                    <td><?= $criticalEvent->gps_y === null ? '' : $this->Number->format($criticalEvent->gps_y) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Timestamp') ?></th>

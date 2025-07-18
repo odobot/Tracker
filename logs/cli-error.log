@@ -27,3 +27,15 @@ Stack Trace:
 - /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php:12
 - [main]:
 
+2025-07-17 14:05:23 error: [Cake\Database\Exception\DatabaseException] Cannot describe ten_minute_data. It has 0 columns. in /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 120
+Stack Trace:
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/ORM/Table.php:528
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ModelCommand.php:111
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/ModelCommand.php:94
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/bake/src/Command/AllCommand.php:115
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/BaseCommand.php:190
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php:334
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/vendor/cakephp/cakephp/src/Console/CommandRunner.php:172
+- /home/ndiba/Documents/PROJECTS/FAC/Tracker/bin/cake.php:12
+- [main]:
+

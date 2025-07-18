@@ -17,6 +17,8 @@
                     <th><?= $this->Paginator->sort('humidity') ?></th>
                     <th><?= $this->Paginator->sort('current_reading') ?></th>
                     <th><?= $this->Paginator->sort('status') ?></th>
+                    <th><?= $this->Paginator->sort('GpsX') ?></th>
+                    <th><?= $this->Paginator->sort('GpsY') ?></th>
                     <th><?= $this->Paginator->sort('timestamp') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
@@ -30,6 +32,8 @@
                     <td><?= $tenMinuteData->humidity === null ? '' : $this->Number->format($tenMinuteData->humidity) ?></td>
                     <td><?= $tenMinuteData->current_reading === null ? '' : $this->Number->format($tenMinuteData->current_reading) ?></td>
                     <td><?= $tenMinuteData->status === null ? '' : $this->Number->format($tenMinuteData->status) ?></td>
+                    <td><?= $tenMinuteData->GpsX === null ? '' : $this->Number->format($tenMinuteData->GpsX) ?></td>
+                    <td><?= $tenMinuteData->GpsY === null ? '' : $this->Number->format($tenMinuteData->GpsY) ?></td>
                     <td><?= h($tenMinuteData->timestamp) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $tenMinuteData->id]) ?>

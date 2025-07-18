@@ -18,6 +18,8 @@
                     <th><?= $this->Paginator->sort('current_reading') ?></th>
                     <th><?= $this->Paginator->sort('status') ?></th>
                     <th><?= $this->Paginator->sort('timestamp') ?></th>
+                    <th><?= $this->Paginator->sort('GpsX') ?></th>
+                    <th><?= $this->Paginator->sort('GpsY') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>
@@ -31,6 +33,8 @@
                     <td><?= $liveData->current_reading === null ? '' : $this->Number->format($liveData->current_reading) ?></td>
                     <td><?= $liveData->status === null ? '' : $this->Number->format($liveData->status) ?></td>
                     <td><?= h($liveData->timestamp) ?></td>
+                    <td><?= $liveData->GpsX === null ? '' : $this->Number->format($liveData->GpsX) ?></td>
+                    <td><?= $liveData->GpsY === null ? '' : $this->Number->format($liveData->GpsY) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $liveData->uuid]) ?>
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $liveData->uuid]) ?>

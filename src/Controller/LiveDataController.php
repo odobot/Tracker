@@ -11,6 +11,13 @@ namespace App\Controller;
  */
 class LiveDataController extends AppController
 {
+    public function initialize(): void
+    {
+        parent::initialize();
+        $this->loadModel('LiveData');
+        $this->request->allowMethod(['post']);
+        $this->autoRender = false;
+    }
     /**
      * Index method
      *
@@ -101,5 +108,121 @@ class LiveDataController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function receive()
+    {
+        $this->request->allowMethod(['post']);
+        $data = $this->request->input('json_decode', true);
+
+        if (!$data || !isset($data['I'], $data['T'], $data['H'], $data['C'], $data['R'], $data['L'], $data['S'])) {
+            throw new BadRequestException('Invalid JSON or missing fields');
+        }
+
+        $status = (int)$data['S'];
+        $uuid = \Cake\Utility\Text::uuid();
+
+        // --- LIVE DATA UPSERT ---
+        $existing = $this->LiveData->find()
+            ->where(['device_id' => $data['I']])
+            ->first();
+
+        if ($existing) {
+            $liveData = $this->LiveData->patchEntity($existing, [
+                'uuid' => $uuid,
+                'temperature' => $data['T'],
+                'humidity' => $data['H'],
+                'current_reading' => $data['C'],
+                'GpsX' => $data['R'],
+                'GpsY' => $data['L'],
+                'status' => $status,
+            ]);
+        } else {
+            $liveData = $this->LiveData->newEntity([
+                'uuid' => $uuid,
+                'device_id' => $data['I'],
+                'temperature' => $data['T'],
+                'humidity' => $data['H'],
+                'current_reading' => $data['C'],
+                'GpsX' => $data['R'],
+                'GpsY' => $data['L'],
+                'status' => $status,
+            ]);
+        }
+
+        $this->LiveData->saveOrFail($liveData);
+
+        // --- TEN_MINUTE_DATA INSERT CONDITIONALLY ---
+        $tenMinuteTable = $this->fetchTable('TenMinuteData');
+        $lastEntry = $tenMinuteTable->find()
+            ->where(['device_id' => $data['I']])
+            ->order(['timestamp' => 'DESC'])
+            ->first();
+
+        $now = new \DateTimeImmutable();
+        $shouldInsert = false;
+
+        if (!$lastEntry) {
+            $shouldInsert = true;
+        } else {
+            $lastTimestamp = \DateTimeImmutable::createFromFormat('Y-m-d H:i:s', $lastEntry->timestamp->format('Y-m-d H:i:s'));
+            if ($now->getTimestamp() - $lastTimestamp->getTimestamp() >= 600) {
+                $shouldInsert = true;
+            }
+        }
+
+        if ($shouldInsert) {
+            $tenMinuteEntity = $tenMinuteTable->newEntity([
+                'uuid' => $uuid,
+                'device_id' => $data['I'],
+                'temperature' => (float)$data['T'],
+                'humidity' => (float)$data['H'],
+                'current_reading' => (float)$data['C'],
+                'GpsX' => (float)$data['R'],
+                'GpsY' => (float)$data['L'],
+                'status' => $status
+            ]);
+            $tenMinuteTable->saveOrFail($tenMinuteEntity);
+        }
+
+        // --- THRESHOLD CHECK & CRITICAL EVENTS ---
+        $thresholds = $this->fetchTable('ThresholdLimits')->find()
+            ->where(['device_id' => $data['I']])
+            ->all();
+
+        foreach ($thresholds as $threshold) {
+            $value = null;
+            if ($threshold->variable === 'temperature') {
+                $value = (float)$data['T'];
+            } elseif ($threshold->variable === 'humidity') {
+                $value = (float)$data['H'];
+            } elseif ($threshold->variable === 'current') {
+                $value = (float)$data['C'];
+            }
+
+            if ($value !== null && (
+                ($threshold->lower_limit !== null && $value < $threshold->lower_limit) ||
+                ($threshold->upper_limit !== null && $value > $threshold->upper_limit)
+            )) {
+                $criticalData = $this->fetchTable('CriticalEvents')->newEntity([
+                    'uuid' => $uuid,
+                    'device_id' => $data['I'],
+                    'temperature' => (float)$data['T'],
+                    'humidity' => (float)$data['H'],
+                    'current_reading' => (float)$data['C'],
+                    'gps_x' => (float)$data['R'],
+                    'gps_y' => (float)$data['L'],
+                    'status' => $status === 0 ? 'Close' : 'Open',
+                    'critical_label' => ucfirst($threshold->variable)
+                ]);
+                $this->fetchTable('CriticalEvents')->saveOrFail($criticalData);
+            }
+        }
+
+        return $this->response->withType('application/json')
+            ->withStringBody(json_encode([
+                'status' => 'success',
+                'uuid' => $uuid
+            ]));
     }
 }

@@ -14,7 +14,9 @@ class ThresholdLimitsController extends AppController
     public function initialize(): void
     {
         parent::initialize();
-        $this->loadComponent('RequestHandler');
+        $this->loadModel('ThresholdLimits');
+        $this->request->allowMethod(['post']);
+        $this->autoRender = false;
     }
     /**
      * Index method
@@ -35,10 +37,11 @@ class ThresholdLimitsController extends AppController
      * @return \Cake\Http\Response|null|void Renders view
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function view($id = null)
+    public function view($deviceId = null, $variable = null)
     {
-        $thresholdLimit = $this->ThresholdLimits->get($id, [
-            'contain' => [],
+        $thresholdLimit = $this->ThresholdLimits->get([
+            'device_id' => $deviceId,
+            'variable' => $variable
         ]);
 
         $this->set(compact('thresholdLimit'));
@@ -95,10 +98,14 @@ class ThresholdLimitsController extends AppController
      * @return \Cake\Http\Response|null|void Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function delete($id = null)
+    public function delete($deviceId = null, $variable = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $thresholdLimit = $this->ThresholdLimits->get($id);
+        $thresholdLimit = $this->ThresholdLimits->get([
+            'device_id' => $deviceId,
+            'variable' => $variable
+        ]);
+
         if ($this->ThresholdLimits->delete($thresholdLimit)) {
             $this->Flash->success(__('The threshold limit has been deleted.'));
         } else {
@@ -108,150 +115,49 @@ class ThresholdLimitsController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
-    /**
-     * Get thresholds for a specific device
-     *
-     * @param string|null $deviceId Device ID
-     * @return \Cake\Http\Response|null|void
-     */
-    public function getByDevice($deviceId = null)
-    {
-        $this->request->allowMethod(['get']);
-        
-        $thresholds = $this->ThresholdLimits->find()
-            ->where(['device_id' => $deviceId])
-            ->all();
-
-        $this->set([
-            'thresholds' => $thresholds,
-            '_serialize' => ['thresholds']
-        ]);
-    }
-
-    /**
-     * Set threshold limits for a device and variable
-     *
-     * @return \Cake\Http\Response|null|void
-     * @throws \Cake\Http\Exception\BadRequestException When missing required fields
-     */
-    // public function setThresholds()
-    // {
-    //     $this->request->allowMethod(['post']);
-    //     $data = $this->request->getData();
-
-    //     // Validate required fields more strictly
-    //     if (empty($data['device_id']) || empty($data['variable'])) {
-    //         throw new BadRequestException("device_id and variable are required fields.");
-    //     }
-
-    //     // Ensure numeric values for limits
-    //     $data['lower_limit'] = isset($data['lower_limit']) ? (float)$data['lower_limit'] : null;
-    //     $data['upper_limit'] = isset($data['upper_limit']) ? (float)$data['upper_limit'] : null;
-
-    //     // Find existing or create new threshold
-    //     $threshold = $this->ThresholdLimits->find()
-    //         ->where([
-    //             'device_id' => $data['device_id'],
-    //             'variable' => $data['variable']
-    //         ])
-    //         ->first();
-
-    //     if (!$threshold) {
-    //         $threshold = $this->ThresholdLimits->newEmptyEntity();
-    //     }
-
-    //     $threshold = $this->ThresholdLimits->patchEntity($threshold, $data);
-
-    //     if (!$this->ThresholdLimits->save($threshold)) {
-    //         $this->response = $this->response->withStatus(400);
-    //         $response = [
-    //             'status' => 'error',
-    //             'message' => 'Validation failed',
-    //             'errors' => $threshold->getErrors()
-    //         ];
-    //     } else {
-    //         $response = [
-    //             'status' => 'success',
-    //             'data' => $threshold
-    //         ];
-    //     }
-
-    //     $this->set(compact('response'));
-    //     $this->viewBuilder()->setOption('serialize', ['response']);
-    // }
-    // src/Controller/ThresholdLimitsController.php
-    public function setThresholds()
+    public function saveThreshold()
     {
         $this->request->allowMethod(['post']);
-        
-        // Get raw input to verify
-        $rawInput = $this->request->input('json_decode');
-        error_log('Raw input: ' . print_r($rawInput, true));
-        
-        // Get parsed data
-        $data = $this->request->getData();
-        error_log('Parsed data: ' . print_r($data, true));
-        
-        // Validate required fields
-        if (empty($data['device_id'])) {
-            throw new BadRequestException('device_id is required');
+        $data = $this->request->input('json_decode', true);
+
+        if (!$data || !isset($data['device_id'], $data['variable'], $data['lower_limit'], $data['upper_limit'])) {
+            throw new BadRequestException('Invalid JSON or missing fields');
         }
-        if (empty($data['variable'])) {
-            throw new BadRequestException('variable is required');
-        }
-        
-        // Force type casting
-        $data['device_id'] = (int)$data['device_id'];
-        $data['variable'] = (string)$data['variable'];
-        
-        // Find or create entity
-        $threshold = $this->ThresholdLimits->find()
+
+        // Check if threshold exists
+        $existing = $this->ThresholdLimits->find()
             ->where([
                 'device_id' => $data['device_id'],
                 'variable' => $data['variable']
             ])
             ->first();
-        
-        if (!$threshold) {
-            $threshold = $this->ThresholdLimits->newEmptyEntity();
+
+        if ($existing) {
+            $threshold = $this->ThresholdLimits->patchEntity($existing, [
+                'lower_limit' => $data['lower_limit'],
+                'upper_limit' => $data['upper_limit']
+            ]);
+        } else {
+            $threshold = $this->ThresholdLimits->newEntity([
+                'device_id' => $data['device_id'],
+                'variable' => $data['variable'],
+                'lower_limit' => $data['lower_limit'],
+                'upper_limit' => $data['upper_limit']
+            ]);
         }
-        
-        // Patch entity with validated data
-        $threshold = $this->ThresholdLimits->patchEntity($threshold, $data, [
-            'validate' => true,
-            'fields' => ['device_id', 'variable', 'lower_limit', 'upper_limit']
-        ]);
-        
-        // Debug final entity state
-        error_log('Entity before save: ' . print_r($threshold->toArray(), true));
-        
-        // Save with transaction
-        $connection = $this->ThresholdLimits->getConnection();
-        $connection->begin();
-        
-        try {
-            if ($this->ThresholdLimits->save($threshold)) {
-                $connection->commit();
-                $response = [
-                    'status' => 'success',
-                    'data' => $threshold
-                ];
-            } else {
-                $connection->rollback();
-                $this->response = $this->response->withStatus(400);
-                $response = [
+
+        if ($this->ThresholdLimits->save($threshold)) {
+            return $this->response->withType('application/json')
+                ->withStringBody(json_encode([
+                    'status' => 'success'
+                ]));
+        } else {
+            $errors = $threshold->getErrors();
+            return $this->response->withType('application/json')
+                ->withStringBody(json_encode([
                     'status' => 'error',
-                    'message' => 'Validation failed',
-                    'errors' => $threshold->getErrors()
-                ];
-            }
-        } catch (\Exception $e) {
-            $connection->rollback();
-            error_log('Database error: ' . $e->getMessage());
-            throw $e;
+                    'errors' => $errors
+                ]));
         }
-        
-        $this->set(compact('response'));
-        $this->viewBuilder()->setOption('serialize', ['response']);
     }
 }

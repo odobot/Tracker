@@ -19,13 +19,15 @@ class LiveDataFixture extends TestFixture
     {
         $this->records = [
             [
-                'uuid' => '2f8ef613-5593-4ba0-a325-54c5616eacd3',
+                'uuid' => '3d42c506-d471-4013-820c-a990c557c71f',
                 'device_id' => 1,
                 'temperature' => 1.5,
                 'humidity' => 1.5,
                 'current_reading' => 1.5,
                 'status' => 1,
                 'timestamp' => '',
+                'GpsX' => 1.5,
+                'GpsY' => 1.5,
             ],
         ];
         parent::init();

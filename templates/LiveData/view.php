@@ -43,6 +43,14 @@
                     <td><?= $liveData->status === null ? '' : $this->Number->format($liveData->status) ?></td>
                 </tr>
                 <tr>
+                    <th><?= __('GpsX') ?></th>
+                    <td><?= $liveData->GpsX === null ? '' : $this->Number->format($liveData->GpsX) ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('GpsY') ?></th>
+                    <td><?= $liveData->GpsY === null ? '' : $this->Number->format($liveData->GpsY) ?></td>
+                </tr>
+                <tr>
                     <th><?= __('Timestamp') ?></th>
                     <td><?= h($liveData->timestamp) ?></td>
                 </tr>

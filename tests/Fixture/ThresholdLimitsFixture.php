@@ -20,7 +20,7 @@ class ThresholdLimitsFixture extends TestFixture
         $this->records = [
             [
                 'device_id' => 1,
-                'variable' => 'Lorem ipsum dolor sit amet',
+                'variable' => '88ce9f87-feb8-4e10-a52b-673b16660b4c',
                 'lower_limit' => 1,
                 'upper_limit' => 1,
             ],

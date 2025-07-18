@@ -11,31 +11,16 @@ namespace App\Controller;
  */
 class CriticalEventsController extends AppController
 {
-    public function initialize(): void
-    {
-        parent::initialize();
-        $this->loadComponent('RequestHandler');
-    }
-
     /**
      * Index method
      *
-     * @param string|null $deviceId Device ID to filter by
      * @return \Cake\Http\Response|null|void Renders view
      */
-    public function index($deviceId = null)
+    public function index()
     {
-        $query = $this->CriticalEvents->find()
-            ->order(['timestamp' => 'DESC']);
-
-        if ($deviceId !== null) {
-            $query->where(['device_id' => $deviceId]);
-        }
-
-        $criticalEvents = $this->paginate($query);
+        $criticalEvents = $this->paginate($this->CriticalEvents);
 
         $this->set(compact('criticalEvents'));
-        $this->viewBuilder()->setOption('serialize', ['criticalEvents']);
     }
 
     /**
@@ -52,7 +37,6 @@ class CriticalEventsController extends AppController
         ]);
 
         $this->set(compact('criticalEvent'));
-        $this->viewBuilder()->setOption('serialize', ['criticalEvent']);
     }
 
     /**

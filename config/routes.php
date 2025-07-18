@@ -93,22 +93,6 @@ return function (RouteBuilder $routes): void {
      * });
      * ```
      */
-
-    $routes->connect('/api/receive', ['controller' => 'Api', 'action' => 'receive']);
-    $routes->scope('/threshold-limits', function (RouteBuilder $routes) {
-        $routes->connect('/device/:deviceId', ['controller' => 'ThresholdLimits', 'action' => 'getByDevice'])
-            ->setPass(['deviceId'])
-            ->setMethods(['GET']);
-            
-        $routes->connect('/set-thresholds', ['controller' => 'ThresholdLimits', 'action' => 'setThresholds'])
-            ->setMethods(['POST']);
-            
-        $routes->fallbacks(DashedRoute::class);
-    });
-    $routes->scope('/critical-events', function (RouteBuilder $routes) {
-        $routes->connect('/', ['controller' => 'CriticalEvents', 'action' => 'index']);
-        $routes->connect('/device/:deviceId', ['controller' => 'CriticalEvents', 'action' => 'index'])
-            ->setPass(['deviceId']);
-        $routes->fallbacks(DashedRoute::class);
-    });
+    $routes->connect('/api/live-data', ['controller' => 'LiveData', 'action' => 'receive', '_method' => 'POST']);
+    $routes->connect('/threshold-limits/save', ['controller' => 'ThresholdLimits', 'action' => 'saveThreshold', '_method' => 'POST']);
 };
